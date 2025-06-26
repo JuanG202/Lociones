@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.main-landing {
+  max-width: 420px;
+  margin: 60px auto 0 auto;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  padding: 40px 32px 32px 32px;
+  text-align: center;
+  border: 2.5px solid #e0c3fc;
+  animation: fadeIn 1s;
+}
+
+.main-landing h1 {
+  color: #7c3aed;
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+}
+
+.subtitle {
+  color: #6d28d9;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 18px 38px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 18px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #7c3aed 60%, #f472b6 100%);
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.13);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.main-btn.caballero {
+  background: linear-gradient(90deg, #6366f1 60%, #38bdf8 100%);
+}
+.main-btn.dama {
+  background: linear-gradient(90deg, #f472b6 60%, #fbbf24 100%);
+}
+.main-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.18);
+  filter: brightness(1.08);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.perfume-card {
+  background: #fff;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  padding: 32px 28px 24px 28px;
+  text-align: center;
+  border: 2px solid #e0c3fc;
+  animation: fadeIn 1s;
+}
+
+.perfume-card h1 {
+  color: #7c3aed;
+  font-size: 2.1rem;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.perfume-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.perfume-list li {
+  background: #f3e8ff;
+  color: #3b0764;
+  margin: 7px 0;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 1.07rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.06);
+}
+.perfume-list li:hover {
+  background: #c7d2fe;
+  color: #7c3aed;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #6366f1;
+  background: #f3e8ff;
+  padding: 7px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.06);
+}
+.back-link:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+.footer-credito {
+  position: fixed;
+  left: 18px;
+  bottom: 10px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  z-index: 100;
+  opacity: 0.8;
+}
+.footer-credito a {
+  color: #a1a1aa;
+  text-decoration: underline dotted;
+  font-size: 0.85rem;
+}
+.footer-credito a:hover {
+  color: #7c3aed;
+}
