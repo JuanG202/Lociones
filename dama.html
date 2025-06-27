@@ -10,25 +10,38 @@
   <div class="perfume-card">
     <a href="index.html" class="back-link">&larr; Volver</a>
     <h1>Lociones Dama</h1>
-    <ul class="perfume-list">
-      <li>1 Ahli vega</li>
-      <li>Ange Odemon</li>
-      <li>Dursay</li>
-      <li>BonBon</li>
-      <li>Can Can</li>
-      <li>Carolina</li>
-      <li>CH</li>
-      <li>Coco Mademoiselle</li>
-      <li>Coconut passion.</li>
-      <li>Delina</li>
-      <li>Disel Polanca</li>
-      <li>Heiris, scandal</li>
-      <li>La vida és bella elixir</li>
-      <li>Light Blue</li>
-      <li>Ho chino</li>
-      <li>Omnia coral</li>
-      <li>Thank Next</li>
+    <ul class="perfume-list" id="perfume-list-dama">
+      <li data-nombre="Ahli Vega" data-tipo="Dulce" data-descripcion="Una fragancia dulce y envolvente, ideal para ocasiones especiales." data-valor="$15.000">1 Ahli vega</li>
+      <li data-nombre="Ange Odemon" data-tipo="Dulce" data-descripcion="Notas frutales y florales, perfecta para el día a día." data-valor="$15.000">Ange Odemon</li>
+      <li data-nombre="Dursay" data-tipo="Amaderada" data-descripcion="Aromas amaderados con un toque elegante y sofisticado." data-valor="$15.000">Dursay</li>
+      <li data-nombre="BonBon" data-tipo="Dulce" data-descripcion="Dulzura intensa con notas de caramelo." data-valor="$15.000">BonBon</li>
+      <li data-nombre="Can Can" data-tipo="Dulce" data-descripcion="Fragancia juvenil y chispeante." data-valor="$15.000">Can Can</li>
+      <li data-nombre="Carolina" data-tipo="Amaderada" data-descripcion="Elegancia y sofisticación en cada gota." data-valor="$15.000">Carolina</li>
+      <li data-nombre="CH" data-tipo="Dulce" data-descripcion="Notas dulces y florales, muy femenina." data-valor="$15.000">CH</li>
+      <li data-nombre="Coco Mademoiselle" data-tipo="Dulce" data-descripcion="Clásica y moderna, con un toque dulce." data-valor="$15.000">Coco Mademoiselle</li>
+      <li data-nombre="Coconut passion" data-tipo="Dulce" data-descripcion="Exótica y tropical, con coco y vainilla." data-valor="$15.000">Coconut passion.</li>
+      <li data-nombre="Delina" data-tipo="Dulce" data-descripcion="Notas florales y afrutadas, muy femenina." data-valor="$15.000">Delina</li>
+      <li data-nombre="Disel Polanca" data-tipo="Amaderada" data-descripcion="Aroma fuerte y duradero, con fondo amaderado." data-valor="$15.000">Disel Polanca</li>
+      <li data-nombre="Heiris, scandal" data-tipo="Dulce" data-descripcion="Dulce y atrevida, para destacar." data-valor="$15.000">Heiris, scandal</li>
+      <li data-nombre="La vida és bella elixir" data-tipo="Dulce" data-descripcion="Optimista y dulce, para todos los días." data-valor="$15.000">La vida és bella elixir</li>
+      <li data-nombre="Light Blue" data-tipo="Dulce" data-descripcion="Fresca y dulce, ideal para el verano." data-valor="$15.000">Light Blue</li>
+      <li data-nombre="Ho chino" data-tipo="Amaderada" data-descripcion="Notas orientales y amaderadas." data-valor="$15.000">Ho chino</li>
+      <li data-nombre="Omnia coral" data-tipo="Dulce" data-descripcion="Colorida y vibrante, con notas dulces." data-valor="$15.000">Omnia coral</li>
+      <li data-nombre="Thank Next" data-tipo="Dulce" data-descripcion="Juvenil y dulce, para todos los días." data-valor="$15.000">Thank Next</li>
     </ul>
+    <!-- Modal -->
+    <div id="modal-locion" class="modal-locion" style="display:none;">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2 id="modal-nombre"></h2>
+        <img id="modal-imagen" src="assets/frasco.jpg" alt="Imagen loción" style="width:120px; margin:16px auto; display:block; border-radius:16px;">
+        <p id="modal-tipo"></p>
+        <p id="modal-descripcion"></p>
+        <p id="modal-valor" style="font-weight:bold;"></p>
+        <a id="modal-whatsapp" class="whatsapp-btn" href="#" target="_blank">Enviar</a>
+      </div>
+    </div>
+    <script src="modal-locion.js"></script>
   </div>
 </body>
 </html> 
