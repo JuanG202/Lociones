@@ -55,7 +55,7 @@ body {
   background: linear-gradient(90deg, #6366f1 60%, #38bdf8 100%);
 }
 .main-btn.dama {
-  background: linear-gradient(90deg, #f472b6 60%, #fbbf24 100%);
+   background: linear-gradient(90deg, #f472b6 60%, #fbbf24 100%);
 }
 .main-btn:hover {
   transform: scale(1.07);
@@ -459,4 +459,48 @@ body {
       transform: scale(1.05);
       box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
     }
+    
+/* Barra de búsqueda */
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+.search-input {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 2px solid #e0c3fc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.search-input:focus {
+  border: 2px solid #7c3aed;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1200;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.18);
+  border-radius: 50%;
+  transition: transform 0.18s, box-shadow 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.28);
+}
     
