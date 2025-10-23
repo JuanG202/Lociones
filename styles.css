@@ -849,6 +849,30 @@ html {
   }
 }*/
 
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Opcional: puedes quitarlo si no quieres círculo */
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombra ligera opcional */
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+
 /* ===== ESTILOS ESPECTACULARES PARA EL INDEX ===== */
 
 /* Pantalla de carga épica */
