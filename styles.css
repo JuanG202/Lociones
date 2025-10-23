@@ -826,7 +826,7 @@ html {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-/* Efectos de neón para elementos especiales */
+/* Efectos de neón para elementos especiales 
 .neon-glow {
   text-shadow: 
     0 0 5px #7c3aed,
@@ -847,7 +847,7 @@ html {
   20%, 24%, 55% {
     text-shadow: none;
   }
-}
+}*/
 
 /* ===== ESTILOS ESPECTACULARES PARA EL INDEX ===== */
 
