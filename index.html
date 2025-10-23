@@ -3,25 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lociones Exclusivas</title>
+  <title>Lociones Exclusivas - Experiencia Premium</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main-landing enhanced-landing">
-    <img src="assets/perfu-sinfondo.png" alt="Lociones Exclusivas" class="landing-logo">
-    <h1>¡Descubre las lociones más exclusivas!</h1>
-    <p class="subtitle">Fragancias únicas para cada personalidad.<br>Elige una categoría para ver nuestras lociones premium.</p>
-    <div class="button-group">
-      <a href="caballero.html" class="main-btn caballero">Caballero</a>
-      <a href="dama.html" class="main-btn dama">Dama</a>
-    </div>
-    <div class="landing-extra">
-      <h2>✨ Exclusividad y Estilo ✨</h2>
-      <p>Solo las mejores esencias, seleccionadas para ti.<br>¡Haz tu pedido y vive la experiencia de una fragancia inolvidable!</p>
+  <!-- Pantalla de carga épica -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Cargando fragancias exclusivas...</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
     </div>
   </div>
-  <footer class="footer-credito">
-    Creado por: <a href="https://www.instagram.com/juan_granja2?igsh=aTBoejZ1cTgxdXF2" target="_blank">Juan Pablo Granja</a>
+
+  <!-- Partículas flotantes -->
+  <div class="particles-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-landing enhanced-landing hero-section">
+    <!-- Logo con efectos especiales -->
+    <div class="logo-container">
+      <div class="logo-glow"></div>
+      <img src="assets/perfu-sinfondo.png" alt="Lociones Exclusivas" class="landing-logo hero-logo">
+      <div class="logo-particles">
+        <span class="sparkle">✨</span>
+        <span class="sparkle">💎</span>
+        <span class="sparkle">⭐</span>
+      </div>
+    </div>
+
+    <!-- Título principal con efectos -->
+    <h1 class="hero-title">
+      <span class="title-word">¡Descubre</span>
+      <span class="title-word">las</span>
+      <span class="title-word">lociones</span>
+      <span class="title-word">más</span>
+      <span class="title-word neon-glow">exclusivas!</span>
+    </h1>
+
+    <!-- Subtítulo animado -->
+    <p class="subtitle hero-subtitle">
+      <span class="subtitle-line">Fragancias únicas para cada personalidad.</span>
+      <span class="subtitle-line">Elige una categoría para ver nuestras lociones premium.</span>
+    </p>
+
+    <!-- Botones con efectos especiales -->
+    <div class="button-group hero-buttons">
+      <a href="caballero.html" class="main-btn caballero hero-btn">
+        <span class="btn-text">Caballero</span>
+        <span class="btn-icon">🧔‍♂️</span>
+        <div class="btn-glow"></div>
+      </a>
+      <a href="dama.html" class="main-btn dama hero-btn">
+        <span class="btn-text">Dama</span>
+        <span class="btn-icon">👱‍♀️</span>
+        <div class="btn-glow"></div>
+      </a>
+    </div>
+
+    <!-- Sección extra con efectos -->
+    <div class="landing-extra hero-extra">
+      <div class="extra-content">
+        <h2 class="extra-title">
+          <span class="title-icon">✨</span>
+          Exclusividad y Estilo
+          <span class="title-icon">✨</span>
+        </h2>
+        <p class="extra-text">
+          Solo las mejores esencias, seleccionadas para ti.<br>
+          ¡Haz tu pedido y vive la experiencia de una fragancia inolvidable!
+        </p>
+        <div class="extra-features">
+          <div class="feature-item">
+            <span class="feature-icon">🌹</span>
+            <span class="feature-text">Fragancias Premium</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🚚</span>
+            <span class="feature-text">Envío Rápido</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💎</span>
+            <span class="feature-text">Calidad Garantizada</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Efectos de fondo adicionales -->
+    <div class="background-effects">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+  </div>
+
+  <!-- Footer mejorado -->
+  <footer class="footer-credito hero-footer">
+    <div class="footer-content">
+      <span class="footer-text">Creado por</span>
+      <a href="https://www.instagram.com/juan_granja2?igsh=aTBoejZ1cTgxdXF2" target="_blank" class="footer-link">
+        Juan Pablo Granja
+      </a>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="modal-locion.js"></script>
+  <script>
+    // Script específico para el index
+    document.addEventListener('DOMContentLoaded', function() {
+      // Ocultar pantalla de carga después de 3 segundos
+      setTimeout(() => {
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        loadingOverlay.style.opacity = '0';
+        setTimeout(() => {
+          loadingOverlay.style.display = 'none';
+        }, 1000);
+      }, 3000);
+
+      // Animación de entrada para elementos
+      const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-buttons, .hero-extra');
+      heroElements.forEach((element, index) => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(50px)';
+        
+        setTimeout(() => {
+          element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+          element.style.opacity = '1';
+          element.style.transform = 'translateY(0)';
+        }, 1000 + (index * 200));
+      });
+
+      // Efectos de hover mejorados para botones
+      const heroBtns = document.querySelectorAll('.hero-btn');
+      heroBtns.forEach(btn => {
+        btn.addEventListener('mouseenter', function() {
+          this.style.transform = 'scale(1.1) translateY(-5px)';
+          this.querySelector('.btn-glow').style.opacity = '1';
+        });
+        
+        btn.addEventListener('mouseleave', function() {
+          this.style.transform = 'scale(1) translateY(0)';
+          this.querySelector('.btn-glow').style.opacity = '0';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
